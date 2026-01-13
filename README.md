@@ -5,7 +5,7 @@ csv 파일을 읽어 Mysql table로 변환시키는 파이썬 프로그램입니
 
 * column 단위로 20줄을 읽어 ollama 위에서 실행하는 gpt-oss:20b에 프롬프트를 던져서 해당 column의 type를 결정
 * resolve_token_type()를 통해 LLM의 답변을 정제
-* "LOAD DATA INFILE" 실행시 발생하는 1406, 1265, 1366 에러는 mysql의 column를 변경해서 자동 해결
+* "LOAD DATA INFILE" 실행시 발생하는 1406, 1265, 1366 에러는 mysql의 column의 type를 변경해서 자동 해결
 
 
   <br>
