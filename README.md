@@ -21,7 +21,7 @@ Build a python code to execute sql command for mysql with conditions.
 
 Mysql의 table 구성시에 column의 type를 지정해야 하는데 type를 LLM(ollama 기반의 gpt-oss:20b, deepseek-r1:32b, exaone3.5:32b 등)이 결정하도록 합니다.
 
-변경 1) column의 갯수가 50개가 넘을 때 LLM이 주는 type의 갯수가 column보다 작음.
+변경 1) column의 갯수가 50개가 넘을 때 LLM이 주는 type의 갯수가 column보다 작음.    <br>
 => 매 column 단위로 프롬프트를 작성해서 LLM에 보내고 type를 결정하도록 함.
 
 변경 2) LLM이 돌려 주는 type이 "INT"가 아니라 "INTINTINTINT..." 로 오거나 엉뚱한 답변이 오는 경우가 있음
