@@ -9,7 +9,8 @@ Build a python code to execute sql command for mysql with conditions.
 
 2) The name of directory becomes the name of database on mysql. 
 
-3) A table of mysql is made with one csv file. The name of table is the same of the file name except ".csv".  ".csv" should be removed from the table name.  
+3) A table of mysql is made with one csv file. The name of table is the same of the file name except ".csv".   <br>
+ ".csv" should be removed from the table name.  
 
 4) The script commands create tables where the column of the file becomes the field name and fields are as many as columns.  
 
