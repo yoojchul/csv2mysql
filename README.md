@@ -1,6 +1,6 @@
 # CSV to Mysql
 
-csv 파일을 읽어 Mysql table로 변환시키는 파이썬 프로그램입니다. csv 파일이 위치한 디렉토리는 Mysql의 database가 되고 csv 파일 이름은 table, csv header는 table의 column이 되도록 합니다.   <br>
+특정 디렉토리의 모든 csv 파일을 읽어 Mysql table로 자동 변환시키는 파이썬 프로그램입니다. csv 파일이 위치한 디렉토리는 Mysql의 database가 되고 csv 파일 이름은 table, csv header는 table의 column이 되도록 합니다.   <br>
 
 
 * column 단위로 20줄을 읽어 ollama 위에서 실행하는 gpt-oss:20b에 프롬프트를 던져서 해당 column의 type를 결정
