@@ -13,6 +13,13 @@ sameple인 seoul_transport directory는 /var/lib/mysql-files에 있어야 합니
 
 ## 환경
 파이썬 3.12.3   <br>
+torch 2.9.1<br>
+flagEmbedding 1.3.5 <br>
+pymilvus 2.6.6 <br>
+ollama 0.6.1 <br>
+mysql-connector-python 9.5.0 <br>
+<br>
+Milvus 2.6.4 <br>
 Mysql 8.4.7    <br>
-ollama 0.13.5  <br> 
+Ollama 0.13.5  <br> 
 RTX 3090 
