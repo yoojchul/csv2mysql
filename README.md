@@ -9,7 +9,13 @@
 
 
   <br>
-sameple인 seoul_transport directory는 /var/lib/mysql-files에 있어야 합니다. 
+sample인 seoul_transport directory는 /var/lib/mysql-files에 있어야 합니다. 
+
+To upload csv files to Mysql
+```
+# python3 main.py   ; 
+```
+
 
 ## 환경
 파이썬 3.12.3   <br>
