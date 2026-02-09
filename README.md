@@ -15,7 +15,25 @@ To upload csv files to Mysql
 ```
 # python3 main.py   ; 
 ```
+<br>
 
+그리고 Mysql를 조회하는 프로그램은 아래 절차 대로입니다.
+
+* table를 조회하는 유저 입력을 받아 milvus에 query하고 가장 적당한 table를 선택
+* 유저 입력과 선택한 table로 부족한 table이 있는지 ollama(gpt-oss:20b)에게 문의하는 prompt를 작성
+* 부족한 table이 있다는 ollama 결론이 나오면 milvus query를 ollama로부터 받아 milvus에 조회. 만족한 결론이 나올 때까지 반복 수행.
+* table 리스트를 확보한 다음 mysql query를 통해 각 table의 field를 확인
+* 조회하는 유저 입력과 field로 프롬프트를 작성해서 ollama(gpt-oss:20b)에 보내 mysql query문을 작성케하고 이를 실행하는 파이썬 프로그램을 작성하고 실행
+
+```
+# python3 serch.py
+...
+user query : 2024년5월과 6월  지하철 망포 총승차승객수는?
+
+[RESULT] rows=2
+{'month': '2024-05', 'total': Decimal('467064')}
+{'month': '2024-06', 'total': Decimal('430759')}
+```
 
 ## 환경
 파이썬 3.12.3   <br>
