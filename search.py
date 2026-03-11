@@ -268,7 +268,7 @@ def main():
 
     mysql_host = os.getenv("MYSQL_HOST", "localhost")
     mysql_user = os.getenv("MYSQL_USER", "root")
-    mysql_password = os.getenv("MYSQL_PASSWORD", "Passw0rd1!")
+    mysql_password = os.getenv("MYSQL_PASSWORD", "_password_")
     mysql_db = os.getenv("MYSQL_DB", "seoul_transport")
     mysql_port = int(os.getenv("MYSQL_PORT", "3306"))
 
