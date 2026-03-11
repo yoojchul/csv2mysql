@@ -101,7 +101,7 @@ def resolve_token_type(input_str: str):
 # --- Configuration ---
 MYSQL_CONFIG = {
     'user': 'root',
-    'password': 'Passw0rd1!',
+    'password': '_password_',
     'host': '127.0.0.1',
     'allow_local_infile': True  # Required for LOAD DATA LOCAL
 }
